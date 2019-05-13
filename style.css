@@ -1,0 +1,40 @@
+body {
+  background-color: #FDFDFD;
+}
+div {
+  padding-left: 23%;
+  padding-right: 23%;
+}
+.title {
+  padding-top: 5%;
+  font-family: 'Fjalla One', sans-serif;
+  color: dimgrey;
+}
+.nick {
+  color: grey;
+}
+h3 {
+  margin-top: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  color: grey;
+}
+p {
+  font-family: 'Noto Sans', sans-serif;
+  color: grey;
+}
+.fa {
+  color: #A0A0A0;
+  padding-right: 15px;
+}
+img {
+  border-radius: 50%;
+  height: 75px;
+  opacity: .8;
+}
+footer {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  font-family: 'Noto Sans', sans-serif;
+  color: grey;
+  font-size: 11px;
+}
