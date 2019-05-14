@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) {
+  div {
+  padding-left: 10%;
+  padding-right: 10%;
+}
