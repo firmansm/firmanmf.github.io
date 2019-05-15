@@ -1,5 +1,8 @@
-@media only screen and (max-width: 600px) {
+  /* Portrait */
+@media screen and (orientation:portrait) {
+   /* Portrait styles here */
   div {
   padding-left: 10%;
   padding-right: 10%;
+  }
 }
