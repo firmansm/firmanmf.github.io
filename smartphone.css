@@ -6,3 +6,12 @@
   padding-right: 10%;
   }
 }
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+   /* Landscape styles here */
+  div {
+  padding-left: 27%;
+  padding-right: 27%;
+  }
+}
