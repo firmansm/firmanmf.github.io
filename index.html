@@ -36,7 +36,7 @@
       <a href="https://scholar.google.com/citations?user=kI5tutcAAAAJ&hl=en&oi=ao" class="fa ai ai-google-scholar-square ai-1x" target="_blank"></a>
       <!--a href="https://500px.com/firmansm" target="_blank"><i  class="fa fa-500px" aria-hidden="true"></i></a-->
       <!--a href="mailto:firman@protonmail.com" class="fa fa-envelope"></a-->
-	  <a href="https://docs.google.com/document/d/1W63lg3C6nMejSgBf-QTwdXTz21_7xoe_Y4_vXk5Yuxg/edit" target="_blank" sytle="color:#194260;"><b>CV</b></a>
+	  <a href="https://docs.google.com/document/d/e/2PACX-1vTuLZ64M_z68h8Zb4pXHM1sJmftK2ioBM0jXYrbyE8qiD6OOHR5EOAh6etlvip9SKMdd8mMQfAUh3qK/pub" target="_blank" sytle="color:#194260;"><b>CV</b></a>
   </div>
 
   <div id="about">
@@ -89,73 +89,17 @@
     <h3><a href="#about" class="nick">About </a><span class="nick">.</span><a href="#research" class="nick"> Research </a><span class="nick">.</span> Experience</h3>
 	<p>During my time at Stony Brook University, I held a variety of positions. As a Research Assistant at the <a href="https://wastedata.info/" target="_blank">Waste Data & Analysis Center</a>, I sampled and analyzed New York State general and recycling waste data. As a Teaching Assistant, I assisted faculty in the <a href="https://www.stonybrook.edu/est/" target="_blank" style="color: #035397;">Department of Technology and Society</a> with topics such as system theory, research methods, and IT applications. As a Collegiate Science and Technology Entry Program <a href="https://www.stonybrook.edu/commcms/stem-smart/" target="_blank">(CSTEP)</a>  instructor, I taught underrepresented minority students how to code and use various multimedia software.</p>
     <p>In terms of industrial experience, I previously worked as a Leadership Training and Development Associate at <a href="https://www.nutrifood.co.id" target="_blank">Nutrifood</a> in Jakarta, Indonesia. During my tenure, I applied my knowledge of industrial and organizational psychology, as well as my IT skills, to develop a number of digital learning platforms, an online assessment center, and a series of leadership training.</p>
-    <p>I have also been involved in various voluntary projects and community services such as an IT support and facilitator at Workers’ Educational Association <a href="https://www.wea.org.uk/south-west/bath-north-east-somerset-bristol-south-gloucestershire" target="_blank">(WEA)</a> Bristol, a tutor at <a href="http://kelasinspirasi.org/" target="_blank" style="color: #035397;">Kelas Inpirasi</a> - Indonesia Mengajar in Jakarta, a mentor at Sagasitas Indonesia, and the initiator of a cognitive behavioral therapy (CBT) program to reduce anxiety among inmates at Sleman Correctional Institution, Special Region of Yogyakarta.</p>
-	<p>As said earlier, I like traveling. Born and raised in the same town and received all of my K-12 education within a 3.1 mile (5 kilometers) radius, I wanted to see the world and learn about different cultures. Traveling makes me 'richer' and wiser in some ways. Here are <span style="color:#ff533d;">the countries </span>I have visited so far. Do you recognize them?</p>
+    <p>I have also been involved in various voluntary projects and community services such as an IT support and facilitator at Workers’ Educational Association <a href="https://www.wea.org.uk/south-west/bath-north-east-somerset-bristol-south-gloucestershire" target="_blank">(WEA)</a> Bristol, a tutor at <a href="http://kelasinspirasi.org/" target="_blank" style="color: #035397;">Kelas Inpirasi</a> - Indonesia Mengajar in Jakarta, a mentor at Sagasitas Indonesia, and the initiator of a cognitive behavioral therapy program to reduce anxiety among inmates at Sleman Correctional Institution, Special Region of Yogyakarta.</p>
+	<p>As said earlier, I like traveling. Born and raised in the same town and received all of my K-12 education within a 3.1 mile (5 kilometers) radius, I wanted to see the world and learn about different cultures. Traveling makes me 'richer' and wiser in some ways. Here are the countries I have visited so far. Do you recognize them?</p>
 	<br>
 	<img class="center responsive2" src="https://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=600x400&chf=bg,s,f6f6f6&chco=d0d0d0,cc0000,ff533d&chd=s:999999999999999999999999999999999999999999999999999999999&chld=BE|FR|PF|NC|BL|MF|PM|WF|TF|GF|GP|YT|MQ|RE|DE|IT|IE|NL|AW|CW|SX|BQ|GB|AI|BM|IO|KY|FK|GI|MS|SH|TC|GG|IM|JE|PN|GS|VG|ES|AU|ID|CN|HK|MO|TW|JP|MY|SG|QA|TR|US|AS|UM|GU|MP|PR|VI" width="600" height="400"  alt="Countries I visited."><br/>
 	
   </div>
 
   <div>
-  <footer>
-  <p style="font-size:12px;">Designed by Firman. Updated 09/2021. </p>
-  </footer>
-</div>
-
-<script id="rendered-js">
-	const carouselText = [
-  {text: "Apple", color: "red"},
-  {text: "Orange", color: "orange"},
-  {text: "Lemon", color: "yellow"}
-]
-
-$( document ).ready(async function() {
-  carousel(carouselText, "#feature-text")
-});
-
-async function typeSentence(sentence, eleRef, delay = 100) {
-  const letters = sentence.split("");
-  let i = 0;
-  while(i < letters.length) {
-    await waitForMs(delay);
-    $(eleRef).append(letters[i]);
-    i++
-  }
-  return;
-}
-
-async function deleteSentence(eleRef) {
-  const sentence = $(eleRef).html();
-  const letters = sentence.split("");
-  let i = 0;
-  while(letters.length > 0) {
-    await waitForMs(100);
-    letters.pop();
-    $(eleRef).html(letters.join(""));
-  }
-}
-
-async function carousel(carouselList, eleRef) {
-    var i = 0;
-    while(true) {
-      updateFontColor(eleRef, carouselList[i].color)
-      await typeSentence(carouselList[i].text, eleRef);
-      await waitForMs(1500);
-      await deleteSentence(eleRef);
-      await waitForMs(500);
-      i++
-      if(i >= carouselList.length) {i = 0;}
-    }
-}
-
-function updateFontColor(eleRef, color) {
-  $(eleRef).css('color', color);
-}
-
-function waitForMs(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
-  </script>
-
+		<footer>
+		<p style="font-size:12px;">Designed by Firman. Updated 09/2021. </p>
+		</footer>
+	</div>
 </body>
 </html>
