@@ -1,41 +1,94 @@
 body {
-  background-color: #FDFDFD;
-}
-/*div {
-  padding-left: 23%;
-  padding-right: 23%;
-}*/
+  background-color: #f6f6f6;
+  }
+
 .title {
   padding-top: 5%;
-  font-family: 'Fjalla One', sans-serif;
-  color: dimgrey;
+  font-family: 'Maven Pro', sans-serif;
+  color: #001E6C; 
 }
+
 .nick {
-  color: grey;
+  color: #ffb2a8;
 }
+
 h3 {
   margin-top: 40px;
   font-family: 'Fjalla One', sans-serif;
-  color: grey;
+  color: #001E6C;
 }
-p {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 18px;
-  color: grey;
+
+p, ul, li {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 20px;
+  color: #035397;
 }
+
+a {
+	color: #ff533d;
+}
+
 .fa {
-  color: #A0A0A0;
-  padding-right: 15px;
+  color: #194260;
+  padding-right: 20px;
 }
+
 .img {
   border-radius: 50%;
   height: 75px;
   opacity: .8;
 }
+
+.img2 {
+  border-radius: 50%;
+  height: 150px;
+  opacity: .8;
+}
+
 footer {
   margin-top: 60px;
   margin-bottom: 70px;
   font-family: 'Noto Sans', sans-serif;
-  color: grey;
+  color: #194260;
   font-size: 11px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responsive1 {
+  width: 90%;
+  height: auto;
+}
+
+.responsive2 {
+  width: 69%;
+  height: auto;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: blue; }
 }
